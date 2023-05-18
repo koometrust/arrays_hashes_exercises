@@ -19,6 +19,11 @@ average = sum / numbers.length.to_f
 puts average
 
 # 5. Whether any number is greater than 10
-result = numbers.any? { |number| number > 10 }
+result = numbers.any? { |num| num > 10 }
 puts result
+
+# 5. List numbers greater than 10
+num_above_10 = numbers.select { |num| num > 10 }
+puts num_above_10
+
 
