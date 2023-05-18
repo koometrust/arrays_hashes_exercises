@@ -19,3 +19,11 @@ scores = {
   # 3. The average score of all students
   avg_score = scores.values.sum / scores.values.length
   puts "The average score of all students is #{avg_score}"
+
+  # 4. the scores below 90
+  below_90 = scores.select { | _,score| score < 90 }
+
+  output = "The scores below 90%: "
+  output += below_90.map { |name, score| "#{name}: #{score}" }.join(", ")
+  
+  puts output
