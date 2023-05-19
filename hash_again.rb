@@ -22,7 +22,18 @@ scores = {
 
 
 
-
+  highest_score = 0
+  top_student = ""
+  
+  scores.each do |student, score|
+    if score > highest_score
+      highest_score = score
+      top_student = student
+    end
+  end
+  
+  puts "#{top_student} has the highest score of #{highest_score}."
+  
 
   
  
